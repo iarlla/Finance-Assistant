@@ -48,4 +48,5 @@ No vídeo, mostre a tela do Streamlit:
 
 > Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
 
-[Link do vídeo]
+[[Link do vídeo]
+](https://youtube.com/shorts/T3uPjKK4N4Q?feature=share)
