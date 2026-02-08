@@ -1,0 +1,69 @@
+{
+  "certificacoes": [
+    {
+      "id": "cpre-fl",
+      "nome": "CPRE-FL - Certified Professional for Requirements Engineering",
+      "provedor": "IREB",
+      "nivel": "Foundation",
+      "preco_usd": 0,
+      "preco_brl_est": 1300.00,
+      "requisitos": "Nenhum",
+      "descricao": "Foco em engenharia de requisitos, elicitação e documentação."
+    },
+    {
+      "id": "az-900",
+      "nome": "AZ-900: Microsoft Azure Fundamentals",
+      "provedor": "Microsoft",
+      "nivel": "Fundamentals",
+      "preco_usd": 99.00,
+      "preco_brl_est": 550.00,
+      "requisitos": "Nenhum",
+      "descricao": "Conceitos básicos de nuvem e serviços Azure."
+    },
+    {
+      "id": "psm-i",
+      "nome": "PSM I - Professional Scrum Master",
+      "provedor": "Scrum.org",
+      "nivel": "Intermediário",
+      "preco_usd": 150.00,
+      "preco_brl_est": 850.00,
+      "requisitos": "Conhecimento em Scrum Guide",
+      "descricao": "Certificação vitalícia sobre o framework Scrum."
+    },
+    {
+      "id": "az-204",
+      "nome": "AZ-204: Developing Solutions for Microsoft Azure",
+      "provedor": "Microsoft",
+      "nivel": "Associate",
+      "preco_usd": 165.00,
+      "preco_brl_est": 950.00,
+      "requisitos": "AZ-900 (recomendado), experiência em programação",
+      "descricao": "Desenvolvimento de aplicativos e serviços em nuvem Azure."
+    },
+    {
+      "id": "itil-4-f",
+      "nome": "ITIL 4 Foundation",
+      "provedor": "PeopleCert",
+      "nivel": "Foundation",
+      "preco_usd": 500.00,
+      "preco_brl_est": 2500.00,
+      "requisitos": "Nenhum",
+      "descricao": "Governança e melhores práticas de gerenciamento de serviços de TI."
+    },
+    {
+      "id": "az-305",
+      "nome": "AZ-305: Designing Microsoft Azure Infrastructure Solutions",
+      "provedor": "Microsoft",
+      "nivel": "Expert",
+      "preco_usd": 165.00,
+      "preco_brl_est": 950.00,
+      "requisitos": "AZ-104 ou AZ-204",
+      "descricao": "Certificação de ouro para Arquitetos de Soluções em Nuvem."
+    }
+  ],
+  "configuracoes_cambio": {
+    "moeda_base": "BRL",
+    "ultima_atualizacao": "2026-02-08",
+    "obs": "Valores estimados baseados no câmbio e taxas administrativas."
+  }
+}

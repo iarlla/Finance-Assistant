@@ -1,0 +1,9 @@
+categoria,descricao,valor,tipo
+RECEITA,Salario CLT Liquido,2900.00,ENTRADA
+MORADIA,Aluguel e Condominio (Estimado DF),900.00,SAIDA_FIXA
+CONTAS_FIXAS,Energia e Agua,250.00,SAIDA_FIXA
+TELECOM,Internet e Celular,150.00,SAIDA_FIXA
+ALIMENTACAO,Supermercado e Refeicao,700.00,SAIDA_FIXA
+TRANSPORTE,Transporte Publico / Combustivel,300.00,SAIDA_FIXA
+SAUDE_LAZER,Saude e Outros,100.00,SAIDA_VARIAVEL
+INVESTIMENTO,Reserva para Certificacoes/Casa,500.00,RESERVA

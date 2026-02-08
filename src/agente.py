@@ -1,7 +1,8 @@
-from openai import OpenAI
+import google.generativeai as genai
 import config
 
-client = OpenAI(api_key=config.OPENAI_API_KEY)
+# Configuração do modelo
+genai.configure(api_key=config.GEMINI_API_KEY)
 
 SYSTEM_PROMPT = """
 Você é o Nexus Z, mentor financeiro para a Geração Z de TI.
@@ -14,13 +15,22 @@ REGRAS:
 """
 
 def responder_nexus_z(mensagens):
-    """Envia o histórico para a LLM e retorna a resposta do Nexus Z."""
+    """Envia o histórico para o Gemini e retorna a resposta."""
     try:
-        response = client.chat.completions.create(
-            model=config.MODEL_NAME,
-            messages=[{"role": "system", "content": SYSTEM_PROMPT}] + mensagens,
-            temperature=0.7
+        # Inicializa o modelo
+        model = genai.GenerativeModel(
+            model_name="gemini-1.5-pro",
+            system_instruction=SYSTEM_PROMPT
         )
-        return response.choices[0].message.content
+        
+        # Converte o histórico para o formato do Gemini
+        # O Streamlit guarda as mensagens, aqui nós as enviamos para o chat do Gemini
+        chat = model.start_chat(history=[])
+        
+        # O Gemini lida melhor com o envio da última mensagem em um chat ativo
+        ultima_mensagem = mensagens[-1]["content"]
+        response = chat.send_message(ultima_mensagem)
+        
+        return response.text
     except Exception as e:
-        return f"Erro no sistema (Stack Trace): {str(e)}"
+        return f"Erro no Kernel (Gemini Stack Trace): {str(e)}"
